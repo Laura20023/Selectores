@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .grid-container{
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+                grid-template-areas: "astro astro astro"
+                                    "content content content"
+                                    "content content content"
+                                    "content content content"
+                                    "footer footer footer";
+                grid-gap: 30px;
+                background-color: rgb(189, 141, 235);
+                padding: 15px;
+            }
+
+            .grid-container > div {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 20px;
+            }
+
+            
+
+            .astro {
+                grid-area: astro;
+                background-color: rgb(161, 231, 161);
+            }
+
+            
+
+            .content {
+                background-color: rgb(230, 176, 112);
+                grid-area: content;
+            }
+
+            .footer {
+                grid-column-start: 1;
+                background-color: rgb(161, 231, 161);
+                grid-column-end: 4;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+
+            #Imagen1 {
+                width: 150px;
+                padding: 15px 15px 15px 15px;
+                background-color: white;
+                border-color: tomato;
+                border-width: 10px;
+                border-style: solid;
+                text-align: left;
+            }
+            p:nth-child(odd) {
+                background-color: darkred;
+            }
+
+            p:nth-child(even) {
+                background-color: deeppink;
+            }
+
+            section {
+                color: forestgreen;
+            }
+
+            section section {
+                color:rgb(83, 48, 4);
+            }
+
+            section section section {
+                color: mediumblue;
+            }
+
+            #section {
+                color: red;
+            }
+
+            section:hover {
+                color: rgb(58, 1, 58);
+            }
+
+            section:hover section:hover {
+                color: rgb(209, 57, 82);
+            }
+
+            section:hover section:hover section:hover {
+                color: yellow;
+            }
+
+            ul {
+                text-align: left;
+            }
+
+            ul li {
+                list-style: square;
+                list-style-position: inside;
+            }
+
+            ol {
+                text-align: left;
+            }
+
+            ol li {
+                list-style: decimal;
+                list-style-position: inside;
+            }
+
+
+        </style>
+    </head>
+</html>
+<body>
+    <div class="grid-container">
+        <div class="astro"><H2>ASTRONOMIA</H2></div>
+        
+        <div class="content"
+            <h1>Universo</h1>
+            <p>La energía del Universo es un ingrediente producido por los cuerpos estelares, las Estrellas.</p>
+            <p>Cuerpos que se iluminan mediante la intervención de la energía solar.</p>
+            <p>Ciencia interdisciplinar que se apoya en otras ciencias como la física, la química, la geología o, incluso, la biología.</p>
+            <p>Los científicos intentan explicar el origen del Universo con diversas teorías.</p>
+            <p>En el universo hay infinidad de agrupaciones de estrellas y otros astros que se llaman galaxias.</p>
+            <ul>
+                <li>Fisica</li>
+                <li>Quimica</li>
+                <li>Geologia</li>
+            </ul>
+            <ol>
+                <li>Origen</li>
+                <li>Explicacion</li>
+                <li>Dudas</li>
+            </ol>
+        </div>
+        <div class="footer">
+            <section>Las galaxias</section>
+            <section>
+                <section>
+                    La via lactea
+                </section>
+            </section>
+            <section>
+                <section>
+                    <section>
+                        Las estrellas fugazes
+                    </section>
+                </section>
+            </section>
+            <img class="Imagen1" src="https://www.astromia.com/universo/fotos/lasgalaxias.jpg" alt="">
+
+        </div>
+    </div>
+</body>
